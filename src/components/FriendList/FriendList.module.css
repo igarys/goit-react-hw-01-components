@@ -1,9 +1,9 @@
-.friend-list{
+.friendList{
   width: 250px;
   padding: 0;
   margin-top: 60px;
 }
-.friend-list-item {
+.friendListItem {
   list-style: none;
   display: flex;
   align-items: center;
@@ -17,4 +17,9 @@
   width: 10px;
   height:10px;
   border-radius: 50%;
+}
+.name {
+ font-weight: 500;
+ color: #5072A7;
+ margin-bottom: 10px;
 }

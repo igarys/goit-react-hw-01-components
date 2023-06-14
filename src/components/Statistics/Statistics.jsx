@@ -1,23 +1,23 @@
 import { getRandomHslColor } from "utils/js/getRandomColor";
-import './Statistics.css';
+import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
     return (
-      <section className="statistics">
-        <h2 className="title">{title}</h2>
+      <section className={css.statistics}>
+        <h2 className={css.title}>{title}</h2>
 
-        <ul className="stat-list">
+        <ul className={css.statList}>
           {stats.map(({ id, label, percentage }) => (
             <li
                   style={{
                       backgroundColor: getRandomHslColor(),
                   }}
-              className="item"
+              className={css.item}
               key={id}
             >
-              <span className="label">{label}</span>
-              <span className="percentage">{percentage}%</span>
+              <span className={css.label}>{label}</span>
+              <span className={css.percentage}>{percentage}%</span>
             </li>
           ))}
         </ul>

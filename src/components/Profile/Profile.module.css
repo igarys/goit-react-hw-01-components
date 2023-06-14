@@ -37,13 +37,14 @@
   background-color: #B0C4DE;
   color: aliceblue;
 }
-.stats-data {
+.statsData {
   display: grid;
   justify-items: center;
   width: 84px;
 }
-.border {
-border-right: 1px solid #5072A7;
+.statsDataBorder {
+  composes: statsData;
+  border-right: 1px solid #5072A7;
 }
 .label {
   display: flex;
