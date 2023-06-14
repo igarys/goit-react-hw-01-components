@@ -1,5 +1,6 @@
 import { getRandomHslColor } from "utils/js/getRandomColor";
 import './Statistics.css';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
     return (
@@ -24,3 +25,11 @@ export const Statistics = ({ title, stats }) => {
     );
 }
 
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number,
+  })
+}
